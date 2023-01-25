@@ -18,3 +18,7 @@ A project demo-... will be created.  At the end of the demo the project will be 
 - set taints on a node
 - set toleration to run on a node with a taint
 - run on a node which is unschedulable (master)
+
+# Some information about signals, kubectl delete pod...
+
+Signals_and_kubectl.md
