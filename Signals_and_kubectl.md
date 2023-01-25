@@ -297,9 +297,11 @@ When we would delete the pod with --grace-period=1 or set the terminationGracePe
 
 ## Deployment with PVC
 
+```bash
 $ ./12_deployment_without_pvc.sh 
 deployment.apps "busybox" deleted
 persistentvolumeclaim "busybox-storage" deleted
 persistentvolumeclaim/busybox-storage created
 deployment.apps/busybox created
-
+```
+!!! even when I am using RWO I can start man pods, and all can mount the PV !!!
