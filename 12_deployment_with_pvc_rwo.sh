@@ -1,5 +1,5 @@
-# kubectl delete deployment busybox
-# kubectl delete pvc busybox-storage
+kubectl delete deployment busybox
+kubectl delete pvc busybox-storage
 
 cat << EOF | kubectl apply -f -
 kind: PersistentVolumeClaim
@@ -8,7 +8,7 @@ metadata:
   name: busybox-storage
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteOncePod
   resources:
     requests:
       storage: 1Gi
